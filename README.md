@@ -8,3 +8,4 @@
 * Authentication middleware
 * Rate limiting
 * Locking accounts
+* Testing (probably Jest)
