@@ -9,6 +9,34 @@
     core-js "^2.5.3"
     regenerator-runtime "^0.11.1"
 
+"@gql2ts/from-query@^1.7.2":
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/@gql2ts/from-query/-/from-query-1.7.2.tgz#60e38c45d103331a3e9ebd185048f24bbb84cda3"
+  dependencies:
+    "@gql2ts/language-typescript" "^1.7.2"
+    "@gql2ts/util" "^1.7.2"
+
+"@gql2ts/from-schema@^1.7.2":
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/@gql2ts/from-schema/-/from-schema-1.7.2.tgz#c3279aea7ce623d5e525fdf5176fe5ffc582132d"
+  dependencies:
+    "@gql2ts/language-typescript" "^1.7.2"
+    "@gql2ts/util" "^1.7.2"
+    dedent "^0.7.0"
+    graphql ">= 0.10 <1.0.0"
+
+"@gql2ts/language-typescript@^1.7.2":
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/@gql2ts/language-typescript/-/language-typescript-1.7.2.tgz#7b5d5fbd851e0eea5fcba1380a4a3e047564acd3"
+  dependencies:
+    "@gql2ts/util" "^1.7.2"
+    humps "^2.0.0"
+    typescript "^2.2.2"
+
+"@gql2ts/util@^1.7.2":
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/@gql2ts/util/-/util-1.7.2.tgz#cdfc8d09abf5b116bcff888b15b512ebd5f0c417"
+
 "@types/body-parser@*":
   version "1.16.8"
   resolved "https://registry.yarnpkg.com/@types/body-parser/-/body-parser-1.16.8.tgz#687ec34140624a3bec2b1a8ea9268478ae8f3be3"
@@ -63,6 +91,12 @@
   dependencies:
     "@types/express-serve-static-core" "*"
     "@types/mime" "*"
+
+"@types/uuid@^3.4.3":
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-3.4.3.tgz#121ace265f5569ce40f4f6d0ff78a338c732a754"
+  dependencies:
+    "@types/node" "*"
 
 "@types/zen-observable@^0.5.3":
   version "0.5.3"
@@ -499,7 +533,7 @@ color-name@^1.1.1:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
 
-commander@^2.12.1, commander@^2.5.0:
+commander@^2.12.1, commander@^2.5.0, commander@^2.9.0:
   version "2.15.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.15.1.tgz#df46e867d0fc2aec66a34662b406a9ccafff5b0f"
 
@@ -605,6 +639,10 @@ decamelize@^1.1.1:
 decode-uri-component@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
+
+dedent@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/dedent/-/dedent-0.7.0.tgz#2495ddbaf6eb874abb0e1be9df22d2e5a544326c"
 
 deep-extend@~0.4.0:
   version "0.4.2"
@@ -954,6 +992,16 @@ got@^6.7.1:
     unzip-response "^2.0.1"
     url-parse-lax "^1.0.0"
 
+gql2ts@^1.7.2:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/gql2ts/-/gql2ts-1.7.2.tgz#2707f38aa3cce64d552fceb30baecb28a799c4f2"
+  dependencies:
+    "@gql2ts/from-query" "^1.7.2"
+    "@gql2ts/from-schema" "^1.7.2"
+    "@gql2ts/util" "^1.7.2"
+    commander "^2.9.0"
+    graphql ">= 0.10 <1.0.0"
+
 graceful-fs@^4.1.11, graceful-fs@^4.1.2:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
@@ -1057,7 +1105,7 @@ graphql-yoga@^1.9.2:
     graphql-tools "^2.23.1"
     subscriptions-transport-ws "^0.9.7"
 
-"graphql@^0.11.0 || ^0.12.0 || ^0.13.0":
+"graphql@>= 0.10 <1.0.0", "graphql@^0.11.0 || ^0.12.0 || ^0.13.0":
   version "0.13.2"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-0.13.2.tgz#4c740ae3c222823e7004096f832e7b93b2108270"
   dependencies:
@@ -1125,6 +1173,10 @@ http-errors@~1.6.2:
     inherits "2.0.3"
     setprototypeof "1.1.0"
     statuses ">= 1.4.0 < 2"
+
+humps@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/humps/-/humps-2.0.1.tgz#dd02ea6081bd0568dc5d073184463957ba9ef9aa"
 
 iconv-lite@0.4.19:
   version "0.4.19"
@@ -2486,7 +2538,7 @@ typeorm@0.2.0:
     yargonaut "^1.1.2"
     yargs "^11.1.0"
 
-typescript@2.8.3:
+typescript@2.8.3, typescript@^2.2.2:
   version "2.8.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.8.3.tgz#5d817f9b6f31bb871835f4edf0089f21abe6c170"
 
@@ -2584,7 +2636,7 @@ uuid@3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.1.0.tgz#3dd3d3e790abc24d7b0d3a034ffababe28ebbc04"
 
-uuid@^3.1.0:
+uuid@^3.1.0, uuid@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.2.1.tgz#12c528bb9d58d0b9265d9a2f6f0fe8be17ff1f14"
 
