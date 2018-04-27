@@ -27,8 +27,9 @@
     "uuid": "^3.2.1"
   },
   "scripts": {
-    "start": "nodemon --exec ts-node src/index.ts",
-    "test": "jest",
+    "start": "NODE_ENV=development nodemon --exec ts-node src/index.ts",
+    "test-server": "NODE_ENV=test ts-node src/index.ts",
+    "test": "NODE_ENV=test jest",
     "gen-schema-types": "gql2ts src/schema.graphql -o src/types/schema.d.ts"
   },
   "jest": {
@@ -36,13 +37,6 @@
       "^.+\\.tsx?$": "ts-jest"
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
   }
 }
