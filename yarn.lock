@@ -124,6 +124,10 @@
   dependencies:
     "@types/node" "*"
 
+"@types/yup@^0.24.3":
+  version "0.24.3"
+  resolved "https://registry.yarnpkg.com/@types/yup/-/yup-0.24.3.tgz#42da6b4d78d1394bf9af794a8b636ebb423f4f29"
+
 "@types/zen-observable@^0.5.3":
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/@types/zen-observable/-/zen-observable-0.5.3.tgz#91b728599544efbb7386d8b6633693a3c2e7ade5"
@@ -793,6 +797,10 @@ camelcase@^4.0.0, camelcase@^4.1.0:
 capture-stack-trace@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.0.tgz#4a6fa07399c26bba47f0b2496b4d0fb408c5550d"
+
+case@^1.2.1:
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/case/-/case-1.5.4.tgz#b201642aae9e374feb5750d1181a76850153830c"
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -1537,6 +1545,10 @@ find-up@^2.1.0:
   resolved "https://registry.yarnpkg.com/find-up/-/find-up-2.1.0.tgz#45d1b7e506c717ddd482775a2b77920a3c0c57a7"
   dependencies:
     locate-path "^2.0.0"
+
+fn-name@~1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/fn-name/-/fn-name-1.0.1.tgz#de8d8a15388b33cbf2145782171f73770c6030f0"
 
 for-in@^1.0.1, for-in@^1.0.2:
   version "1.0.2"
@@ -2827,7 +2839,7 @@ lodash@^4.0.0, lodash@^4.17.4:
   version "4.17.5"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
 
-lodash@^4.13.1, lodash@^4.14.0:
+lodash@^4.13.1, lodash@^4.14.0, lodash@^4.17.0:
   version "4.17.10"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
 
@@ -3503,6 +3515,10 @@ private@^0.1.8:
 process-nextick-args@~2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.0.tgz#a37d732f4271b4ab1ad070d35508e8290788ffaa"
+
+property-expr@^1.2.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/property-expr/-/property-expr-1.4.0.tgz#e28cfe4e7a5a231fb14c8ad687a93a5342e05a8c"
 
 proxy-addr@~2.0.3:
   version "2.0.3"
@@ -4190,6 +4206,10 @@ symbol-tree@^3.2.2:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.2.tgz#ae27db38f660a7ae2e1c3b7d1bc290819b8519e6"
 
+synchronous-promise@^1.0.18:
+  version "1.0.18"
+  resolved "https://registry.yarnpkg.com/synchronous-promise/-/synchronous-promise-1.0.18.tgz#936e8763e6554088cdcf78dc64f7473b972fcefc"
+
 tar@^4:
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/tar/-/tar-4.4.1.tgz#b25d5a8470c976fd7a9a8a350f42c59e9fa81749"
@@ -4271,6 +4291,10 @@ to-regex@^3.0.1, to-regex@^3.0.2:
     extend-shallow "^3.0.2"
     regex-not "^1.0.2"
     safe-regex "^1.1.0"
+
+toposort@^0.2.10:
+  version "0.2.12"
+  resolved "https://registry.yarnpkg.com/toposort/-/toposort-0.2.12.tgz#c7d2984f3d48c217315cc32d770888b779491e81"
 
 touch@^3.1.0:
   version "3.1.0"
@@ -4374,6 +4398,10 @@ type-is@~1.6.15, type-is@~1.6.16:
   dependencies:
     media-typer "0.3.0"
     mime-types "~2.1.18"
+
+type-name@^2.0.1:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/type-name/-/type-name-2.0.2.tgz#efe7d4123d8ac52afff7f40c7e4dec5266008fb4"
 
 typeorm@0.2.0:
   version "0.2.0"
@@ -4786,6 +4814,18 @@ yargs@~3.10.0:
 yn@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/yn/-/yn-2.0.0.tgz#e5adabc8acf408f6385fc76495684c88e6af689a"
+
+yup@^0.24.1:
+  version "0.24.1"
+  resolved "https://registry.yarnpkg.com/yup/-/yup-0.24.1.tgz#2c8a81b5f929ef29aaf77a8b7c9acfa52ab6a7d1"
+  dependencies:
+    case "^1.2.1"
+    fn-name "~1.0.1"
+    lodash "^4.17.0"
+    property-expr "^1.2.0"
+    synchronous-promise "^1.0.18"
+    toposort "^0.2.10"
+    type-name "^2.0.1"
 
 zen-observable-ts@^0.8.6, zen-observable-ts@^0.8.9:
   version "0.8.9"
