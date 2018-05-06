@@ -39,6 +39,15 @@
     dedent "^0.7.0"
     graphql ">= 0.10 <1.0.0"
 
+"@gql2ts/from-schema@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@gql2ts/from-schema/-/from-schema-1.8.0.tgz#12f2b860c0a7948d048e1155845fdba5a2be4a1d"
+  dependencies:
+    "@gql2ts/language-typescript" "^1.8.0"
+    "@gql2ts/util" "^1.8.0"
+    dedent "^0.7.0"
+    graphql ">= 0.10 <1.0.0"
+
 "@gql2ts/language-typescript@^1.7.2":
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/@gql2ts/language-typescript/-/language-typescript-1.7.2.tgz#7b5d5fbd851e0eea5fcba1380a4a3e047564acd3"
@@ -47,9 +56,21 @@
     humps "^2.0.0"
     typescript "^2.2.2"
 
+"@gql2ts/language-typescript@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@gql2ts/language-typescript/-/language-typescript-1.8.0.tgz#af61acd14f789c3175198426bef7fbf0a2954a4a"
+  dependencies:
+    "@gql2ts/util" "^1.8.0"
+    humps "^2.0.0"
+    typescript "^2.2.2"
+
 "@gql2ts/util@^1.7.2":
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/@gql2ts/util/-/util-1.7.2.tgz#cdfc8d09abf5b116bcff888b15b512ebd5f0c417"
+
+"@gql2ts/util@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@gql2ts/util/-/util-1.8.0.tgz#23612425b43ba1a6534e7783137276f4f567a417"
 
 "@types/bcryptjs@^2.4.1":
   version "2.4.1"
