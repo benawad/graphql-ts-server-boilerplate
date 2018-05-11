@@ -10,6 +10,7 @@
     "@types/jest": "^22.2.3",
     "@types/node": "^9.6.6",
     "@types/node-fetch": "^1.6.9",
+    "@types/request-promise": "^4.1.41",
     "@types/sparkpost": "^2.1.3",
     "@types/uuid": "^3.4.3",
     "@types/yup": "^0.24.3",
@@ -40,6 +41,7 @@
     "node-fetch": "^2.1.2",
     "pg": "^7.4.1",
     "reflect-metadata": "^0.1.12",
+    "request-promise": "^4.2.2",
     "sparkpost": "^2.1.2",
     "typeorm": "0.2.0",
     "uuid": "^3.2.1",
@@ -56,6 +58,13 @@
       "^.+\\.tsx?$": "ts-jest"
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }
