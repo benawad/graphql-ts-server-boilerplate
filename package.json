@@ -5,6 +5,7 @@
   "devDependencies": {
     "@types/bcryptjs": "^2.4.1",
     "@types/connect-redis": "^0.0.7",
+    "@types/express-rate-limit": "^2.9.3",
     "@types/express-session": "^1.15.8",
     "@types/ioredis": "^3.2.7",
     "@types/jest": "^22.2.3",
@@ -31,6 +32,7 @@
     "connect-redis": "^3.3.3",
     "dotenv": "^5.0.1",
     "express": "^4.16.3",
+    "express-rate-limit": "^2.11.0",
     "express-session": "^1.15.6",
     "graphql": "^0.13.2",
     "graphql-import": "^0.5.0",
@@ -40,6 +42,7 @@
     "ioredis": "^3.2.2",
     "node-fetch": "^2.1.2",
     "pg": "^7.4.1",
+    "rate-limit-redis": "^1.4.0",
     "reflect-metadata": "^0.1.12",
     "request-promise": "^4.2.2",
     "sparkpost": "^2.1.2",
