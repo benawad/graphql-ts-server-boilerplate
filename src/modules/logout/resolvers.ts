@@ -1,5 +1,4 @@
 import { ResolverMap } from "../../types/graphql-utils";
-import { userSessionIdPrefix, redisSessionPrefix } from "../../constants";
 import { removeAllUsersSessions } from "../../utils/removeAllUsersSessions";
 
 export const resolvers: ResolverMap = {
