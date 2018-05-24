@@ -14,7 +14,7 @@ export const startServer = async () => {
     })
   });
 
-  server.express.get("/confirm/:id", confirmEmail);
+  server.express.get("/confirm/:id.:ext?", confirmEmail);
 
   await createTypeormConn();
   const app = await server.start({

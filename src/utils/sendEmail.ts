@@ -12,7 +12,7 @@ export const sendEmail = async (recipient: string, url: string) => {
       html: `<html>
         <body>
         <p>Testing SparkPost - the world's most awesomest email service!</p>
-        <a href="${url}">confirm email</a>
+        <a href="${url}"><img src="${url}.jpg" width="200" height="50" alt="Click here to confirm" /></a>
         </body>
         </html>`
     },
