@@ -2,9 +2,9 @@ import { Connection } from "typeorm";
 import * as faker from "faker";
 
 import { invalidLogin, confirmEmailError } from "./errorMessages";
-import { User } from "../../entity/User";
-import { TestClient } from "../../utils/TestClient";
-import { createTestConn } from "../../testUtils/createTestConn";
+import { User } from "../../../entity/User";
+import { TestClient } from "../../../utils/TestClient";
+import { createTestConn } from "../../../testUtils/createTestConn";
 
 const email = faker.internet.email();
 const password = faker.internet.password();
