@@ -9,6 +9,7 @@ import { createTestConn } from "../../../testUtils/createTestConn";
 
 let userId = "";
 const redis = new Redis();
+faker.seed(Date.now() + 4);
 
 let conn: Connection;
 

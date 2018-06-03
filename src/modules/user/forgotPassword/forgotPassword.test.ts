@@ -13,6 +13,7 @@ import { createTestConn } from "../../../testUtils/createTestConn";
 
 let conn: Connection;
 export const redis = new Redis();
+faker.seed(Date.now() + 0);
 const email = faker.internet.email();
 const password = faker.internet.password();
 const newPassword = faker.internet.password();

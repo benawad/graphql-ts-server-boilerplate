@@ -11,6 +11,7 @@ import {
 import { TestClient } from "../../../utils/TestClient";
 import { createTestConn } from "../../../testUtils/createTestConn";
 
+faker.seed(Date.now() + 5);
 const email = faker.internet.email();
 const password = faker.internet.password();
 
