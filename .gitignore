@@ -6,3 +6,4 @@ temp/
 *.log
 dump.rdb
 .env
+dist
