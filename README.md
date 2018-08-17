@@ -23,12 +23,19 @@ createdb graphql-ts-server-boilerplate
 ```
 6. [Add a user](https://medium.com/coding-blocks/creating-user-database-and-adding-access-on-postgresql-8bfcd2f4a91e) with the username `postgres` and and no password. (You can change what these values are in the [ormconfig.json](https://github.com/benawad/graphql-ts-server-boilerplate/blob/master/ormconfig.json))
 
+7. Install and start Redis
+
+## Usage
+
+You can start the server with `yarn start` then navigate to `http://localhost:4000` to use GraphQL Playground.
+
+## Features
 
 * Register - Send confirmation email
 * Login
 * Forgot Password
 * Logout  
-* Cookies and Http Header
+* Cookies
 * Authentication middleware
 * Rate limiting
 * Locking accounts
