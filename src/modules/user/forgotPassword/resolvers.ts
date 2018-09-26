@@ -21,7 +21,7 @@ export const resolvers: ResolverMap = {
   Mutation: {
     sendForgotPasswordEmail: async (
       _,
-      { email }: GQL.ISendForgotPasswordEmailOnMutationArguments,
+      { email },
       { redis }
     ) => {
       const user = await User.findOne({ where: { email } });
@@ -31,7 +31,7 @@ export const resolvers: ResolverMap = {
             path: "email",
             message: userNotFoundError
           }
-        ];
+        ] as any;
       }
 
       await forgotPasswordLockAccount(user.id, redis);
@@ -42,7 +42,7 @@ export const resolvers: ResolverMap = {
     },
     forgotPasswordChange: async (
       _,
-      { newPassword, key }: GQL.IForgotPasswordChangeOnMutationArguments,
+      { newPassword, key },
       { redis }
     ) => {
       const redisKey = `${forgotPasswordPrefix}${key}`;

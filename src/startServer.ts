@@ -9,7 +9,7 @@ import * as RateLimitRedisStore from "rate-limit-redis";
 import { redis } from "./redis";
 import { createTypeormConn } from "./utils/createTypeormConn";
 import { confirmEmail } from "./routes/confirmEmail";
-import { genSchema } from "./utils/genSchema";
+import schema from './schema';
 import { redisSessionPrefix } from "./constants";
 import { createTestConn } from "./testUtils/createTestConn";
 
@@ -22,7 +22,7 @@ export const startServer = async () => {
   }
 
   const server = new GraphQLServer({
-    schema: genSchema() as any,
+    schema,
     context: ({ request }) => ({
       redis,
       url: request.protocol + "://" + request.get("host"),
