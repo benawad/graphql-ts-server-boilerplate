@@ -1,4 +1,5 @@
 import { Redis } from "ioredis";
+import { Resolver, QueryResolvers, MutationResolvers } from "./generated-types";
 
 export interface Session extends Express.Session {
   userId?: string;
@@ -11,15 +12,8 @@ export interface Context {
   req: Express.Request;
 }
 
-export type Resolver = (
-  parent: any,
-  args: any,
-  context: Context,
-  info: any
-) => any;
-
-export type GraphQLMiddlewareFunc = (
-  resolver: Resolver,
+export type GraphQLMiddlewareFunc<Result> = (
+  resolver: Resolver<Result, any, Context>,
   parent: any,
   args: any,
   context: Context,
@@ -27,7 +21,6 @@ export type GraphQLMiddlewareFunc = (
 ) => any;
 
 export interface ResolverMap {
-  [key: string]: {
-    [key: string]: Resolver;
-  };
+  Query?: QueryResolvers.Resolvers<Context>,
+  Mutation?: MutationResolvers.Resolvers<Context>
 }

@@ -25,7 +25,7 @@ export const resolvers: ResolverMap = {
   Mutation: {
     register: async (
       _,
-      args: GQL.IRegisterOnMutationArguments
+      args
       // { redis, url }
     ) => {
       try {

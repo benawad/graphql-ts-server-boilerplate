@@ -20,7 +20,10 @@
     "@types/ws": "^5.1.2",
     "@types/yup": "^0.24.3",
     "gql2ts": "^1.7.2",
+    "graphql-code-generator": "^0.12.6",
+    "graphql-codegen-typescript-template": "^0.12.6",
     "jest": "^22.4.3",
+    "lodash": "^4.17.11",
     "nodemon": "^1.17.3",
     "ts-jest": "^22.4.4",
     "ts-node": "6.0.0",
@@ -59,7 +62,7 @@
   "scripts": {
     "start": "NODE_ENV=development nodemon --exec ts-node src/index.ts",
     "test": "NODE_ENV=test jest --watch",
-    "gen-schema-types": "ts-node src/scripts/createTypes.ts"
+    "gen-schema-types": "gql-gen --require ts-node/register/transpile-only --template typescript --schema src/schema.ts --out src/types/generated-types.ts"
   },
   "jest": {
     "globalSetup": "./src/testUtils/callSetup.js",
