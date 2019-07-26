@@ -27,7 +27,7 @@
     "uuid": "^3.2.1"
   },
   "scripts": {
-    "start": "nodemon --exec ts-node src/index.ts",
+    "start": "nodemon --exec ts-node --files src/index.ts",
     "test": "jest",
     "gen-schema-types": "gql2ts src/schema.graphql -o src/types/schema.d.ts"
   },
